@@ -1,0 +1,43 @@
+
+.bball {
+    height: 50%;
+    width: 50%;
+}
+
+.section{
+    z-index: 1;
+}
+
+.section:hover{
+    animation: bounce-out 2s;
+    fill: pink;
+    z-index: 5;
+}
+
+.section:hover:after{
+    /*animation-play-state: paused;*/
+    /*fill: blue;*/
+}
+
+@keyframes bounce-out {
+
+    0% {
+        transform-origin: center center;
+    }
+
+    10% {
+
+    }
+
+    90% {
+        transform: scale(1.2, 1.2);
+
+    }
+
+    100% {
+        transform-origin: center center;
+        transform: scale(1.2, 1.2);
+        fill: red;
+    }
+
+}
